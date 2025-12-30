@@ -1,8 +1,8 @@
-from missing_values import impute_missing_values
-from outliers import remove_outliers_iqr 
-from encoding import encode_features
-from scaling import scale_features
-from splitting import split_data
+from .missing_values import impute_missing_values
+from .outliers import remove_outliers_iqr 
+from .encoding import encode_features
+from .scaling import scale_features
+from .splitting import split_data
 
 def cleaning_pipeline(df, target_column, outlier_columns=None, encoding_columns=None, encoding_method="onehot", scaling_columns=None, scaling_method='standard'):
 
