@@ -5,7 +5,7 @@ def impute_missing_values(
         df: pd.DataFrame, 
         numeric_strategy: str = 'median', 
         categorical_strategy: str = 'most_frequent'
-        ) -> pd.DataFrame:
+) -> pd.DataFrame:
     
     df = df.copy()
     
