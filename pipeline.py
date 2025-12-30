@@ -6,26 +6,45 @@ from .splitting import split_data
 
 def cleaning_pipeline(df, target_column, outlier_columns=None, encoding_columns=None, encoding_method="onehot", scaling_columns=None, scaling_method='standard'):
 
-    # missing values
-    df = impute_missing_values(df)
+    try:
+        steps = []
 
-    # outlier handling
-    if outlier_columns:
-        df = remove_outliers_iqr(df, outlier_columns)
+        # missing values
+        df = impute_missing_values(df)
+        steps.append('missing values handled')
 
-    # encoding
-    if encoding_columns:
-        df = encode_features(
-            df,
-            columns=encoding_columns,
-            method=encoding_method
-        )
+        # outlier handling
+        if outlier_columns:
+            df = remove_outliers_iqr(df, outlier_columns)
+            steps.append('outliers removed')
 
-    if scaling_columns:
-        df = scale_features(
-            df,
-            columns=scaling_columns,
-            method=scaling_method
-        )
+        # encoding
+        if encoding_columns:
+            df = encode_features(
+                df,
+                columns=encoding_columns,
+                method=encoding_method
+            )
+            steps.append(f'{encoding_method} encoding applied')
 
-    return split_data(df, target_column)
+        if scaling_columns:
+            df = scale_features(
+                df,
+                columns=scaling_columns,
+                method=scaling_method
+            )
+            steps.append(f'{scaling_method} scaling applied')
+
+        # split
+        X_train, X_test, y_train, y_test = split_data(df, target_column)
+
+        # message
+        print("Data has been cleaned.")
+        print("steps executed:")
+        for step in steps:
+            print(f'- {step}')
+
+        return X_train, X_test, y_train, y_test
+    
+    except Exception as e:
+        raise RuntimeError(f"Data cleaning failed. Reason: {str(e)}")
