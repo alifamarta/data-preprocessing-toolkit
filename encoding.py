@@ -1,11 +1,7 @@
 import pandas as pd 
 from sklearn.preprocessing import LabelEncoder
 
-def encode_features(
-        df: pd.DataFrame,
-        columns: list,
-        method: str = "onehot"
-) -> pd.DataFrame:
+def encode_features(df: pd.DataFrame,columns: list,method: str = "onehot") -> pd.DataFrame:
 
     df = df.copy()
 

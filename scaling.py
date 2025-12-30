@@ -1,11 +1,7 @@
 import pandas as pd
 from sklearn.preprocessing import StandardScaler, MinMaxScaler
 
-def scale_features(
-        df: pd.DataFrame,
-        columns: list,
-        method: str = "standard"
-) -> pd.DataFrame:
+def scale_features(df: pd.DataFrame, columns: list, method: str = "standard") -> pd.DataFrame:
     
     df = df.copy()
 
