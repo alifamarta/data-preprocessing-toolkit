@@ -7,7 +7,7 @@ Python toolkit for data cleaning and preprocessing
 - Missing value handling
 - Outlier removal
 - Encoding (Label Encoding & One-Hot Encoding)
-- Feature scaling
+- Feature scaling (StandardScaler & MinMaxScaler)
 - Train and test splitting 
 
 ## Quick Example 
