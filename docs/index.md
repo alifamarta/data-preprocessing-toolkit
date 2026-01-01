@@ -1,6 +1,6 @@
 # Data Preprocessing Toolkit
 
-A lightweight Python toolkit for data cleaning and preprocessing
+Python toolkit for data cleaning and preprocessing
 
 ## Features
 - Data Inspection
@@ -10,3 +10,15 @@ A lightweight Python toolkit for data cleaning and preprocessing
 - Feature scaling
 - Train and test splitting 
 
+## Quick Example 
+
+```python
+from data_preprocessing_toolkit.pipeline import cleaning_pipeline
+
+X_train, X_test, y_train, y_test = cleaning_pipeline(
+    df,
+    target_column="label",
+    encoding_columns=["gender", "city"],
+    scaling_columns=["age", "income"]
+)
+```
