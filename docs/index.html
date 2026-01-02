@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Data Preprocessing Toolkit</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- Tailwind CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    @keyframes fadeUp{
+        from {
+            opacity: 0;
+            transform: translateY(24px);
+        }
+        to {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+
+    .animate-fade-up{
+        animation: fadeUp 0.8s ease-out forwards;
+    }
+
+    .delay-1 { animation-delay: 0.2s; }
+    .delay-2 { animation-delay: 0.4s; }
+    .delay-3 { animation-delay: 0.6s; }
+
+    /* Hide before animation */
+    .pre-animate {
+      opacity: 0;
+    }
+  </style>
+</head>
+<body class="bg-gray-900 text-white">
+  
+    <header class="bg-gray-800 shadow">
+    <div class="max-w-6xl mx-auto py-6 flex justify-between items-center">
+      <a href="index.html">
+        <h1 class="text-2xl font-bold text-yellow-400">
+        Data Preprocessing Toolkit
+        </h1>
+      </a>
+      <nav class="space-x-6">
+        <a href="installation.html" class="hover:text-yellow-400">Installation & Usage</a>
+        <a href="https://github.com/alifamarta/data-preprocessing-toolkit" class="hover:text-yellow-400">
+          GitHub
+        </a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="max-w-6xl mx-auto px-6 py-16">
+    <section class="text-center">
+      <h2 class="text-4xl font-bold mb-6 pre-animate animate-fade-up">
+        Simple & Modular Data Cleaning Pipeline
+      </h2>
+      <p class="text-lg text-gray-400 max-w-3xl mx-auto pre-animate animate-fade-up delay-1">
+        A Python toolkit for data inspection, cleaning, preprocessing, encoding,
+        scaling, and train-test splitting — designed for education and rapid experimentation.
+      </p>
+
+      <div class="mt-10 flex justify-center gap-6 pre-animate animate-fade-up delay-2">
+        <a href="installation.html"
+           class="bg-yellow-400 text-black px-6 py-3 rounded-lg hover:bg-yellow-400">
+          Get Started
+        </a>
+        <a href="https://github.com/alifamarta/data-preprocessing-toolkit/releases"
+           class="border border-yellow-400 text-yellow-600 px-6 py-3 rounded-lg hover:bg-yellow-400 hover:text-black">
+          Download ZIP
+        </a>
+      </div>
+    </section>
+
+    <section class="mt-20 grid md:grid-cols-3 gap-10">
+      <div class="bg-yellow-400 p-6 rounded-xl shadow pre-animate animate-fade-up delay-1">
+        <h3 class="font-semibold text-xl mb-3 text-black">Inspection</h3>
+        <p class="text-black">
+          Automatically inspect data shape, missing values, and data types.
+        </p>
+      </div>
+
+      <div class="bg-yellow-400 p-6 rounded-xl shadow pre-animate animate-fade-up delay-2">
+        <h3 class="font-semibold text-xl mb-3 text-black">Preprocessing</h3>
+        <p class="text-black">
+          Handle missing values, outliers, encoding, and feature scaling.
+        </p>
+      </div>
+
+      <div class="bg-yellow-400 p-6 rounded-xl shadow pre-animate animate-fade-up delay-3">
+        <h3 class="font-semibold text-xl mb-3 text-black">Pipeline</h3>
+        <p class="text-black">
+          One unified pipeline with clear error handling and success messages.
+        </p>
+      </div>
+    </section>
+  </main>
+
+</body>
+</html>
