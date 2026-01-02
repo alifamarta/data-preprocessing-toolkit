@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8" />
   <title>Data Preprocessing Toolkit</title>
@@ -8,24 +9,33 @@
   <!-- Tailwind CDN -->
   <script src="https://cdn.tailwindcss.com"></script>
   <style>
-    @keyframes fadeUp{
-        from {
-            opacity: 0;
-            transform: translateY(24px);
-        }
-        to {
-            opacity: 1;
-            transform: translateY(0);
-        }
+    @keyframes fadeUp {
+      from {
+        opacity: 0;
+        transform: translateY(24px);
+      }
+
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
     }
 
-    .animate-fade-up{
-        animation: fadeUp 0.8s ease-out forwards;
+    .animate-fade-up {
+      animation: fadeUp 0.8s ease-out forwards;
     }
 
-    .delay-1 { animation-delay: 0.2s; }
-    .delay-2 { animation-delay: 0.4s; }
-    .delay-3 { animation-delay: 0.6s; }
+    .delay-1 {
+      animation-delay: 0.2s;
+    }
+
+    .delay-2 {
+      animation-delay: 0.4s;
+    }
+
+    .delay-3 {
+      animation-delay: 0.6s;
+    }
 
     /* Hide before animation */
     .pre-animate {
@@ -33,13 +43,14 @@
     }
   </style>
 </head>
+
 <body class="bg-gray-900 text-white">
-  
-    <header class="bg-gray-800 shadow">
+
+  <header class="bg-gray-800 shadow">
     <div class="max-w-6xl mx-auto py-6 flex justify-between items-center">
       <a href="index.html">
         <h1 class="text-2xl font-bold text-yellow-400">
-        Data Preprocessing Toolkit
+          Data Preprocessing Toolkit
         </h1>
       </a>
       <nav class="space-x-6">
@@ -62,12 +73,11 @@
       </p>
 
       <div class="mt-10 flex justify-center gap-6 pre-animate animate-fade-up delay-2">
-        <a href="installation.html"
-           class="bg-yellow-400 text-black px-6 py-3 rounded-lg hover:bg-yellow-400">
+        <a href="installation.html" class="bg-yellow-400 text-black px-6 py-3 rounded-lg hover:bg-yellow-400">
           Get Started
         </a>
         <a href="https://github.com/alifamarta/data-preprocessing-toolkit/releases"
-           class="border border-yellow-400 text-yellow-600 px-6 py-3 rounded-lg hover:bg-yellow-400 hover:text-black">
+          class="border border-yellow-400 text-yellow-600 px-6 py-3 rounded-lg hover:bg-yellow-400 hover:text-black">
           Download ZIP
         </a>
       </div>
@@ -98,4 +108,5 @@
   </main>
 
 </body>
+
 </html>
