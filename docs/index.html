@@ -47,13 +47,13 @@
 <body class="bg-gray-900 text-white">
 
   <header class="bg-gray-800 shadow">
-    <div class="max-w-6xl mx-auto py-6 flex justify-between items-center">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 py-4 flex flex-col sm:flex-row sm:justify-between sm:items-center gap-3">
       <a href="index.html">
-        <h1 class="text-2xl font-bold text-yellow-400">
+        <h1 class="text-xl sm:text-2xl font-bold text-yellow-400">
           Data Preprocessing Toolkit
         </h1>
       </a>
-      <nav class="space-x-6">
+      <nav class="flex gap-4 text-sm sm:text-base">
         <a href="installation.html" class="hover:text-yellow-400">Installation & Usage</a>
         <a href="https://github.com/alifamarta/data-preprocessing-toolkit" class="hover:text-yellow-400">
           GitHub
@@ -62,47 +62,116 @@
     </div>
   </header>
 
-  <main class="max-w-6xl mx-auto px-6 py-16">
+  <main class="max-w-6xl mx-auto px-4 sm:px-6 py-14 sm:py-20">
     <section class="text-center">
-      <h2 class="text-4xl font-bold mb-6 pre-animate animate-fade-up">
+      <h2 class="text-2xl sm:text-4xl font-bold mb-4 sm:mb-6 pre-animate animate-fade-up">
         Simple & Modular Data Cleaning Pipeline
       </h2>
-      <p class="text-lg text-gray-400 max-w-3xl mx-auto pre-animate animate-fade-up delay-1">
+      <p class="text-base sm:text-lg text-gray-400 max-w-3xl mx-auto pre-animate animate-fade-up delay-1">
         A Python toolkit for data inspection, cleaning, preprocessing, encoding,
         scaling, and train-test splitting — designed for education and rapid experimentation.
       </p>
 
-      <div class="mt-10 flex justify-center gap-6 pre-animate animate-fade-up delay-2">
-        <a href="installation.html" class="bg-yellow-400 text-black px-6 py-3 rounded-lg hover:bg-yellow-400">
+      <div class="mt-8 sm:mt-10 flex flex-col sm:flex-row justify-center gap-4 pre-animate animate-fade-up delay-2">
+        <a href="installation.html"
+          class="w-full sm:w-auto bg-yellow-400 text-black px-6 py-3 rounded-lg hover:bg-yellow-500 transition">
           Get Started
         </a>
         <a href="https://github.com/alifamarta/data-preprocessing-toolkit/releases"
-          class="border border-yellow-400 text-yellow-600 px-6 py-3 rounded-lg hover:bg-yellow-400 hover:text-black">
+          class="w-full sm:w-auto border border-yellow-400 text-yellow-400 px-6 py-3 rounded-lg hover:bg-yellow-400 hover:text-black transition">
           Download ZIP
         </a>
       </div>
     </section>
 
-    <section class="mt-20 grid md:grid-cols-3 gap-10">
-      <div class="bg-yellow-400 p-6 rounded-xl shadow pre-animate animate-fade-up delay-1">
-        <h3 class="font-semibold text-xl mb-3 text-black">Inspection</h3>
-        <p class="text-black">
-          Automatically inspect data shape, missing values, and data types.
-        </p>
-      </div>
+    <section class="mt-16 sm:mt-24 mb-10 sm:mb-20">
+      <h1 class="text-2xl sm:text-3xl font-bold mb-10 pre-animate animate-fade-up">
+        Fitur Utama Toolkit
+      </h1>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6 sm:gap-10">
+        <div class="bg-yellow-400 p-6 rounded-xl shadow pre-animate animate-fade-up delay-1">
+          <h3 class="font-semibold text-xl mb-3 text-black">Inspeksi Data</h3>
+          <p class="text-black">
+            Melakukan pemeriksaan awal data seperti jumlah baris, kolom,
+            tipe data, dan nilai kosong.
+          </p>
+        </div>
 
-      <div class="bg-yellow-400 p-6 rounded-xl shadow pre-animate animate-fade-up delay-2">
-        <h3 class="font-semibold text-xl mb-3 text-black">Preprocessing</h3>
-        <p class="text-black">
-          Handle missing values, outliers, encoding, and feature scaling.
-        </p>
-      </div>
+        <div class="bg-yellow-400 p-6 rounded-xl shadow pre-animate animate-fade-up delay-2">
+          <h3 class="font-semibold text-xl mb-3 text-black">Preprocessing</h3>
+          <p class="text-black">
+            Menangani missing value, outlier, encoding data kategorikal,
+            dan normalisasi data numerik.
+          </p>
+        </div>
 
-      <div class="bg-yellow-400 p-6 rounded-xl shadow pre-animate animate-fade-up delay-3">
-        <h3 class="font-semibold text-xl mb-3 text-black">Pipeline</h3>
-        <p class="text-black">
-          One unified pipeline with clear error handling and success messages.
-        </p>
+        <div class="bg-yellow-400 p-6 rounded-xl shadow pre-animate animate-fade-up delay-3">
+          <h3 class="font-semibold text-xl mb-3 text-black">Pipeline</h3>
+          <p class="text-black">
+            Seluruh proses preprocessing dijalankan secara otomatis
+            dengan pesan status dan penanganan error.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <hr class="h-px my-8 mx-auto my-4 bg-gray-600 border-0 pre-animate animate-fade-up delay-1">
+
+    <section class="mt-14 sm:mt-14 mb-10 sm:mb-20">
+      <h1 class="text-2xl sm:text-3xl font-bold mb-10 pre-animate animate-fade-up">
+        Manfaat
+      </h1>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6 sm:gap-10">
+        <div class="bg-yellow-400 p-6 rounded-xl shadow pre-animate animate-fade-up delay-1">
+          <h3 class="font-semibold text-xl mb-3 text-black">Menghemat Waktu</h3>
+          <p class="text-black">
+            Proses data cleaning dan preprocessing dilakukan secara otomatis tanpa penulisan kode berulang.
+          </p>
+        </div>
+
+        <div class="bg-yellow-400 p-6 rounded-xl shadow pre-animate animate-fade-up delay-2">
+          <h3 class="font-semibold text-xl mb-3 text-black">Mendukung Penelitian</h3>
+          <p class="text-black">
+            Membantu menyiapkan data yang siap dianalisis untuk keperluan pembelajaran dan penelitian.
+          </p>
+        </div>
+
+        <div class="bg-yellow-400 p-6 rounded-xl shadow pre-animate animate-fade-up delay-3">
+          <h3 class="font-semibold text-xl mb-3 text-black">Mengurangi Kesalahan</h3>
+          <p class="text-black">
+            Pipeline terintegrasi dan validasi otomatis membantu meminimalkan kesalahan preprocessing.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <hr class="h-px my-8 mx-auto my-4 bg-gray-600 border-0 pre-animate animate-fade-up delay-1">
+
+    <section class="mt-14 sm:mt-14">
+      <h1 class="text-2xl sm:text-3xl font-bold mb-10 pre-animate animate-fade-up">
+        Profil Tim
+      </h1>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6 sm:gap-10">
+        <div class="bg-yellow-400 p-6 rounded-xl shadow pre-animate animate-fade-up delay-1">
+          <h3 class="font-semibold text-xl mb-3 text-black">Wisnu Ikhwansyah Saputra</h3>
+          <p class="text-black">
+            Peneliti Literatur
+          </p>
+        </div>
+
+        <div class="bg-yellow-400 p-6 rounded-xl shadow pre-animate animate-fade-up delay-2">
+          <h3 class="font-semibold text-xl mb-3 text-black">Alif Nur Fathlii Amarta</h3>
+          <p class="text-black">
+            Perancang Produk
+          </p>
+        </div>
+
+        <div class="bg-yellow-400 p-6 rounded-xl shadow pre-animate animate-fade-up delay-3">
+          <h3 class="font-semibold text-xl mb-3 text-black">Fabian Eka Prasetyo</h3>
+          <p class="text-black">
+            Dokumentator & Presenter
+          </p>
+        </div>
       </div>
     </section>
   </main>
